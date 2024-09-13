@@ -1,0 +1,42 @@
+
+
+import slideimg from '../assets/IMG_5867.webp';
+import slideimg1 from '../assets/BodyBanner2.webp';
+import slideimg2 from '../assets/iditha-kadalai-urundai6-pcs-125-gm-324081.webp';
+
+
+
+import React from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import boy1 from '../assets/boy1.svg';
+
+export default function SimpleSlider() {
+  var settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+  };
+  return (
+    <Slider {...settings}>
+      <div className="bg-gray-300 container">
+        <img className="h-20 w-20" src={boy1}/>
+      </div>
+      <div className="bg-red-300 container">
+        <img className="h-20 w-20" src={boy1}/>
+      </div>
+      <div className="bg-blue-300 container">
+        <img className="h-20 w-20" src={boy1}/>
+      </div>
+      <div className="bg-green-300 container">
+        <img className="h-20 w-20" src={boy1}/>
+      </div>
+      <div>
+        <img className="h-20 w-20" src={boy1}/>
+      </div>
+    </Slider>
+  );
+}
